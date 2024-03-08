@@ -9,7 +9,14 @@ class Yatzy:
         total += d4
         total += d5
         return total
-
+    @staticmethod
+    def crazyChance(d1, d2, d3, d4, d5):
+        total = 0
+        if(d1 % 2 == 0 and d2 % 2 == 0 and d3 % 2 == 0 and d4 % 2 == 0 and d5 % 2 == 0):
+            total = d1 * 3 + d2 * 3 + d3 * 3 + d4 * 3 + d5 * 3 
+        
+        return total
+    
     @staticmethod
     def yatzy(dice):
         counts = [0]*(len(dice)+1)

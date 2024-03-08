@@ -31,3 +31,18 @@ def test_Two_PlacedOnTwos():
         expected = 4
         actual = Yatzy.twos(2,3,2,5,1)
         assert expected == actual
+
+def test_CrazyChance_TodosPares():
+        expected = 48
+        actual Yatzy.crazyChance(2,4,6,2,2)
+        assert expected == actual
+
+def test_CrazyChance_TodosImpares():
+        expected = 30
+        actual Yatzy.crazyChance(1,1,3,5,5)
+        assert expected == actual
+
+def test_CrazyChance_ParesEImpares():
+        expected = 52
+        actual = Yatzy.crazyChance(2,4,3,5,6)
+        assert expected == actual
